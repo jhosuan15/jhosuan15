@@ -3,7 +3,7 @@ I'm a passionate 17-year-old fullstack programmer with a deep curiosity about te
 
 
 ## 🌐 Socials:
-<a href="https://www.linkedin.com/in/https:/www.linkedin.com/in/jhosuan-ali-gonzalez-16a845290/">[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]</a>
+<a href="https://www.linkedin.com/in/jhosuan-ali-gonzalez-16a845290/">[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]</a>
 
 # 🗣️Languages:
 
