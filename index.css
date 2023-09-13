@@ -1,0 +1,776 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #212121;
+    color: #fff;
+}
+
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 225px;
+}
+
+.navbar-icon img h1 {
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+
+    display: inline-block;
+    margin-left: 5px;
+    padding-bottom: 25px;
+}
+
+.navbar-menu li:first-child {
+    margin-left: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.bienvenida {
+    width: 600px;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.saludo {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.titulo {
+    font-size: 100px;
+    letter-spacing: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: white;
+    z-index: 1;
+    /* Coloca el texto sobre el círculo */
+    animation: colorChange 8s linear infinite alternate;
+    /* Animación para cambiar el color de las letras */
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff66b2;
+    }
+
+    25% {
+        color: #ffaa00;
+    }
+
+    50% {
+        color: #66ccff;
+    }
+
+    75% {
+        color: #00cc99;
+    }
+
+    100% {
+        color: #ff66b2;
+        /* Regresa al color inicial */
+    }
+}
+
+.tipo {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.boton {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contactame {
+    height: 65px;
+    width: 250px;
+    border: 0px solid;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #604A84;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.contactame:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+}
+
+.curriculum {
+    height: 65px;
+    width: 250px;
+    border: 0px solid;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #604A84;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.curriculum:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+}
+
+.img-icon {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+
+.img-icon:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+
+}
+
+.icon-container {
+    width: 600px;
+    position: absolute;
+    top: 80%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.linea {
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65px;
+    width: 10px;
+    background-color: #57606A;
+}
+
+.navbar-menu li a:hover {
+    font-size: 20px;
+}
+
+.contenedor {
+    position: absolute;
+    top: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo para la imagen */
+.imagen {
+    display: inline-block;
+    margin-right: 50px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 gold;
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+    box-shadow: 0 8px 16px 0 rgb(255, 231, 97);
+    /* Cambia la sombra */
+}
+
+/* Estilo para la imagen dentro del borde */
+.foto {
+    display: block;
+    width: 300px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 300px;
+    /* Para mantener la proporción de aspecto de la imagen */
+    border-radius: 50%;
+    /* Hace que la imagen sea circular */
+}
+
+/* Estilo para el borde giratorio */
+.imagen::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 9px solid gold;
+    /* Color del borde dorado */
+    border-radius: 50%;
+    /* Hace que el borde sea circular */
+    animation: girar 10s linear infinite;
+    /* Animación para hacer que el borde gire */
+}
+
+/* Animación para hacer girar el borde */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.acerca {
+    position: absolute;
+    top: 950px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto {
+    flex: 2;
+    /* Puedes ajustar este valor para cambiar la proporción de la imagen y el texto */
+    width: 500px;
+    text-align: justify;
+}
+
+.idiomas {
+    position: absolute;
+    top: 1770px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.idiomas-titulo {
+    position: absolute;
+    top: 1480px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.idiom {
+    height: 200px;
+    width: 280px;
+    margin-left: 10px;
+}
+
+.cont-img:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+    box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.2);
+    /* Cambia la sombra */
+}
+
+
+.cont-img {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+    /* Bordes redondeados */
+    margin: 20px;
+    /* Margen exterior */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* Sombra */
+}
+
+.cont-img h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.habilidades-titulo {
+    position: absolute;
+    top: 2080px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.habilidades {
+    position: absolute;
+    top: 2480px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo para el contenedor de secciones */
+.section-container {
+    position: absolute;
+    top: 2250px;
+    width: 1400px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    /* Distribuir las secciones uniformemente en el espacio */
+    gap: 20px;
+    /* Espacio entre las secciones */
+    flex-wrap: wrap;
+    margin-top: 60px;
+    /* Espacio entre las filas de secciones */
+}
+
+/* Estilo para el contenedor de secciones */
+.section-container2 {
+    position: absolute;
+    top: 2540px;
+    left: 50%;
+    width: 1400px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    /* Distribuir las secciones uniformemente en el espacio */
+    gap: 20px;
+    /* Espacio entre las secciones */
+    flex-wrap: wrap;
+    margin-top: 200px;
+    /* Espacio entre las filas de secciones */
+}
+
+/* Estilo para cada sección individual */
+.section {
+    width: calc(50% - 20px);
+    /* Ancho del 50% con espacio entre secciones */
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    /* Incluir el borde en el ancho total */
+}
+
+.section:hover {
+    transform: scale(1.01);
+    /* Aumenta el tamaño al 105% cuando se pasa el cursor sobre la tarjeta */
+    box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.2);
+    /* Cambia la sombra */
+}
+
+/* Estilo para las imágenes dentro de las secciones */
+.section img {
+    max-width: 100%;
+    border-radius: 5px;
+    /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para el texto dentro de las secciones */
+.section p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Estilo para el contenedor de etiquetas */
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    /* Envolver las etiquetas en múltiples filas */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo para cada etiqueta */
+.etiqueta {
+    background-color: #57606A;
+    margin: 10px;
+    width: calc(25% - 20px);
+    /* Ancho del 25% con espacio entre etiquetas */
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+/* Limitar a 4 etiquetas por fila */
+.etiqueta:nth-child(4n + 1) {
+    margin-left: 0;
+    /* Reiniciar el margen izquierdo en cada fila */
+}
+
+/* Estilo para el hover */
+.etiqueta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades-blandas-titulo {
+    position: absolute;
+    top: 3200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.habilidades-blandas {
+    position: absolute;
+    top: 3550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 360px;
+    height: 200px;
+    padding: 10px;
+    margin: 30px 60px;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(43, 43, 43, 0.2);
+}
+
+.card img {
+    margin-top: 25px;
+    width: 70px;
+    height: 70px;
+    height: auto;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.trayectoria-titulo {
+    position: absolute;
+    top: 3950px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.trayectoria {
+    position: absolute;
+    top: 4360px;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display:none;
+}
+.trayectoria2 {
+    position: absolute;
+    top: 4960px;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+.active {
+    border-bottom: 2px solid #604A84;
+}
+
+.educacion {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 20px;
+}
+
+.certificaciones {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    margin: 0 20px;
+}
+
+.botones-trayectoria a img {
+    height: 32px;
+    width: 32px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    right: 4%;
+    margin: 50px auto;
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 300px;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{   
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+
+.text-box {
+    padding: 20px 30px;
+    background-color: #fff;
+    color: #212121;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.left-container {
+    left: -100px;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 25px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #604A84;
+    top: 0;
+    left: 50%;
+    margin-left: -0px;
+    z-index: -1;
+    animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+.proyectos{
+    position: absolute;
+    top: 7450px;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.container5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.content {
+    flex: 1;
+    text-align: right;
+
+}
+
+h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.text-box5 {
+    padding: 25px;
+    text-align: justify;
+    background-color: #604A84;
+    width: 400px;
+    border-radius: 5px;
+    height: 100px;
+    margin-right: 25px;
+}
+
+.icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.fa {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.proyecto-imagen{
+    height: 400px;
+    width: 600px;
+}
+
+.links{
+    display: flex;
+    margin-left: 225px;
+}
+
+ /* Estilo para los divs */
+ .contenedores{
+    margin-top: 200px;
+    display: flex; /* Utilizamos flexbox para alinear los divs */
+}
+
+.div1, .div2 {
+    width: 50%; /* Asignamos un ancho del 50% para que ocupen la mitad del contenedor */
+    padding: 20px; /* Añadimos un espacio de relleno para separar los contenidos */
+}
+.div1{
+    margin-top: 50px;
+}
+.form{
+    height: 30px;
+    width: 95%;
+    margin-top: 10px;
+    color: gray;
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.contact{
+    background-color: #604A84;
+    border-radius: 5px;
+    height: 75px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 300px;
+}
+#Mensaje{
+    height: 100px;
+}
+.contactameBtn{
+    height: 50px;
+    width: 100%;
+    border: 0px solid;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #604A84;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form:focus{
+    background-color: white;
+}
+
+.contactameBtn2{
+    height: 50px;
+    width: 25%;
+    border: 0px solid;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #604A84;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.footer{
+    border-top: 1px solid white;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.iconosBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.iconosBtn img{
+    height: 35px;
+    width: 35px;
+}
