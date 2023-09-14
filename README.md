@@ -8,7 +8,7 @@ I'm a passionate 17-year-old fullstack programmer with a deep curiosity about te
 # 🗣️Languages:
 
 * Spanish(Native)
-* English(B2)
+* English(C1)
 * French(A2)
 * German(A2)
 
